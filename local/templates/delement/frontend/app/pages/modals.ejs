@@ -1,0 +1,15 @@
+<% const data = {
+    'title': 'Модальные окна',
+    'flowContainerClass' : ''
+} %>
+<%- require("../layouts/header.ejs")(data) %>
+
+<div class="container">
+    <h1>Пример попапа</h1>
+
+    <a href="#modal-feedback" class="popup-modal">
+        Открыть попап
+    </a>
+</div>
+
+<%- require("../layouts/footer.ejs")() %>

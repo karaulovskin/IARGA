@@ -1,0 +1,19 @@
+@import "../variables.css";
+@import "../media.css";
+
+.search-mobile {
+    display: none;
+    margin-left: 16px;
+
+    a {
+        display: block;
+        width: 17px;
+        height: 17px;
+        background: url(../images/icons/icon-search.svg) no-repeat 50% 50%;
+        background-size: 100%;
+    }
+    
+    @media (--mobile-s) {
+        display: block;
+    }
+}

@@ -1,0 +1,24 @@
+.callback {
+
+}
+.callback__phone {
+    text-decoration: none;
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    color: var(--c-black);
+}
+.callback__link {
+    position: relative;
+    display: inline-block;
+    font-family: 'Gilroy-Bold';
+    font-size: 11px;
+    line-height: 1;
+    text-decoration: none;
+    color: var(--c-gold);
+    border-bottom: 1px solid var(--c-gold);
+    transition: .2s;
+
+    &:hover {
+        border-color: transparent;
+    }
+}

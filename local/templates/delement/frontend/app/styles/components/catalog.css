@@ -1,0 +1,40 @@
+.catalog {
+    width: 100%;
+}
+.catalog-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0;
+}
+.catalog-list__item {
+    flex: 1;
+    margin: 0;
+    padding-left: 0;
+    &:before {
+        content: none;
+    }
+}
+.catalog-list__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--c-black);
+
+    svg {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 10px;
+        color: transparent;
+    }
+
+    span {
+        font-family: 'Gilroy-Bold';
+        font-size: 14px;
+    }
+
+    &:active {
+         color: var(--c-black);
+    }
+}

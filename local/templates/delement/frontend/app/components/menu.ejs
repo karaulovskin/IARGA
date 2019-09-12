@@ -1,0 +1,27 @@
+<nav class="menu">
+    <ul class="menu-list">
+        <% const menulist = [
+            {
+                title: 'О компании',
+                active: true
+            },
+            {
+                title: 'Доставка и оплата'
+            },
+            {
+                title: 'Оснащение ресторанов и офисов'
+            },
+            {
+                title: 'Дизайнерам'
+            },
+            {
+                title: 'Контакты'
+            }
+        ] %>
+        <% menulist.forEach(function (item) { %>
+        <li class="menu-list__item">
+            <a href="#" class="menu-list__link <%= item.active ? 'current' : '' %>"><%= item.title %></a>
+        </li>
+        <% }) %>
+    </ul>
+</nav>

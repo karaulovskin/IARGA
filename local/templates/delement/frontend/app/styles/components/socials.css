@@ -1,0 +1,20 @@
+@import "../variables.css";
+@import "../media.css";
+
+.socials {
+
+}
+.socials-list {
+    display: flex;
+    align-items: center;
+    margin: 0 -8px;
+}
+.socials-list__item {
+    padding: 0 8px;
+}
+.socials-list__link {
+    svg {
+        width: 23px;
+        height: 23px;
+    }
+}

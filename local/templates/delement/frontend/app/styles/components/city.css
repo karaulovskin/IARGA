@@ -1,0 +1,40 @@
+.city {
+
+}
+.city__link {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    text-decoration: none;
+
+    &:hover {
+        .city__select {
+            span {
+                border-color: transparent;
+            }
+        }
+    }
+}
+.city__label {
+    margin-right: 8px;
+    color: var(--c-black);
+}
+.city__select {
+    position: relative;
+
+    span {
+        display: inline-block;
+        font-family: 'Gilroy-Bold';
+        font-size: 12px;
+        line-height: 1.4;
+        color: var(--c-gold);
+        border-bottom: 1px dotted var(--c-gold);
+        transition: .2s;
+    }
+
+    svg {
+        width: 9px;
+        height: 5px;
+        margin-left: 2px;
+    }
+}

@@ -1,0 +1,35 @@
+@import "../variables.css";
+@import "../media.css";
+
+.search {
+    position: relative;
+    width: 448px;
+    border-radius: 3px;
+    overflow: hidden;
+    @media (--tablet-below) {
+        width: 100%;
+    }
+}
+.search__input {
+    width: 100%;
+    height: 30px;
+    padding: 0 14px;
+    line-height: 30px;
+    background: var(--inputBg);
+    border: 1px solid var(--inputBg);
+
+    &::placeholder {
+        font-size: 11px;
+        color: var(--inputPlaceholder);
+    }
+}
+.search__submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 30px;
+    font-size: 0;
+    background: url("../images/icons/icon-search.svg") no-repeat 50% 50%;
+    border: none;
+}
