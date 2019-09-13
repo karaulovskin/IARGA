@@ -5,12 +5,16 @@
     position: relative;
 }
 .header__top {
-    padding: 20px 0 34px;
+    padding: 65px 0 34px;
     @media (--tablet-below) {
+        padding: 34px 0 34px;
         .header__row {
             padding-bottom: 20px;
             border-bottom: 1px solid var(--c-border);
         }
+    }
+    @media (--mobile-s) {
+        padding: 22px 0 34px;
     }
 }
 .header__bottom {
