@@ -25,10 +25,12 @@ export default class MobileMenu {
         }
     }
 
-    openCatalog() {
+    openCatalog($this) {
         let self = this;
+        let $item = $this.closest($('.mobile-menu__item'));
         if(!$(this.menuList).hasClass('is-hide')) {
             $(this.menuList).addClass('is-hide');
+            $item.addClass('is-active');
             setTimeout(function() {
                 $(self.buttonBack).addClass('is-active');
             }, 400);
@@ -37,6 +39,7 @@ export default class MobileMenu {
 
     closeCatalog() {
         if($(this.menuList).hasClass('is-hide')) {
+            $('.mobile-menu__item').removeClass('is-active');
             $(this.menuList).removeClass('is-hide');
             $(this.buttonBack).removeClass('is-active');
         }
@@ -52,7 +55,7 @@ export default class MobileMenu {
             self.closeMenu();
         });
         $(document).on('click', this.subMenuButton, function() {
-            self.openCatalog();
+            self.openCatalog($(this));
         });
         $(document).on('click', this.buttonBack, function() {
             self.closeCatalog();
